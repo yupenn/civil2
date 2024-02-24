@@ -207,9 +207,6 @@ const t8 = {
   marginBottom: 0,
   marginLeft: 0,
   padding: 0,
-  transition: "opacity 400ms ease 0, transform 400ms ease 0s",
-  transform: "none",
-  opacity: 1,
 };
 
 const n6 = {
@@ -356,9 +353,6 @@ export default function About() {
           display: "block",
           boxSizing: "border-box",
           margin: 0,
-          transition: "opacity 800ms ease 0s, transform 800ms ease 0s",
-          transform: "none",
-          opacity: 1,
         }}
       >
         <Container maxWidth="xl" disableGutters style={wxe}>

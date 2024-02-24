@@ -73,9 +73,6 @@ const orh = {
   boxSizing: "border-box",
   marginRight: "auto",
   display: "block",
-  transition: "opacity 400ms ease 0s, transform 400ms ease 0s",
-  transform: "none",
-  opacity: 1,
 };
 
 const hht = {
@@ -221,9 +218,6 @@ const wx = {
 };
 
 const wn = {
-  transition: "opacity 400ms ease 0s, transform 400ms ease 0s",
-  transform: "none",
-  opacity: 1,
   width: "100%",
   marginLeft: "auto",
   boxSizing: "border-box",
@@ -355,8 +349,6 @@ const email = {
   textTransform: "uppercase",
   minWidth: "64px",
   borderRadius: "4px",
-  transition:
-    "background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms, box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms, border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms, color 250ms cubic-bezier(0.4,0,0.2,1) 0ms",
   color: "rgb(255,255,255)",
   padding: "12px 18px",
   backgroundColor: "rgb(115,39,74)",
@@ -532,9 +524,6 @@ export default function Home() {
           margin: 0,
           boxSizing: "border-box",
           display: "box",
-          transition: "opacity 400ms ease 0s, transform 400ms ease 0s",
-          transform: "none",
-          opacity: 1,
         }}
       >
         <Grid
@@ -545,17 +534,7 @@ export default function Home() {
             background: "rgb(234,232,225)",
           }}
         >
-          <Grid
-            container
-            maxWidth="xl"
-            fixed
-            disableGutters
-            sx={{
-              transition: "opacity 400ms ease 0s, transform 400ms ease 0s",
-              transform: "none",
-              opacity: 1,
-            }}
-          >
+          <Grid container maxWidth="xl" fixed disableGutters>
             <Grid container style={ah}>
               <Grid item xs={12} sm={6} md={6} style={x0}>
                 <Grid
