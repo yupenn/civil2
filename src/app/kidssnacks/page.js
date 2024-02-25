@@ -68,11 +68,11 @@ const hht = {
 };
 
 const h8l = {
+  marginTop: "20px",
   boxSizing: "border-box",
   display: "flex",
   flexFlow: "wrap",
   width: "100%",
-  minHeight: "100vh",
 };
 
 const z4a = {
@@ -97,20 +97,6 @@ const jy3 = {
   width: "642.5px",
 };
 
-const gjj = {
-  display: "block",
-  flexBasis: "100%",
-  flexGrow: 0,
-  maxWidth: "100%",
-  boxSizing: "border-box",
-  margin: 0,
-  position: "absolute",
-  top: "50%",
-  left: "4%",
-  width: "100%",
-  transform: "translateY{-50%}",
-};
-
 const imgsx = {
   display: "block",
   backgroundSize: "cover",
@@ -123,28 +109,6 @@ const imgsx = {
   boxSizing: "border-box",
   overflowClipMargin: "content-box",
   overflow: "clip",
-};
-
-const imgsx2 = {
-  display: "block",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center center",
-  width: "100%",
-  margin: "auto",
-  maxHeight: "700px",
-  objectFit: "cover",
-  boxSizing: "border-box",
-  overflowClipMargin: "content-box",
-  overflow: "clip",
-};
-
-const jnm = {
-  width: "100%",
-  margin: "20px auto 0px",
-  boxSizing: "border-box",
-  display: "block",
-  padding: 0,
 };
 
 const font1 = {
@@ -166,14 +130,6 @@ const font2 = {
   display: "block",
   color: "rgb(108,112,47)",
   boxSizing: "border-box",
-};
-
-const d3b = {
-  boxSizing: "border-box",
-  display: "flex",
-  flexWrap: "wrap",
-  width: "100%",
-  flexDirection: "row",
 };
 
 export default function KidsSnacks() {
@@ -230,41 +186,57 @@ export default function KidsSnacks() {
           </Container>
         </Container>
       </Grid>
-      <Grid container style={d3b}>
-        <Container maxWidth="xl" disableGutters style={jnm}>
-          <Grid
-            item
-            xs={12}
-            sm={12}
-            md={12}
-            sx={{
-              maxWidth: "100%",
-              margin: 0,
-              boxSizing: "border-box",
-              position: "relative",
-            }}
-          >
-            <Grid container style={d3b}>
-              <CardMedia
-                component="img"
-                style={imgsx2}
-                src="https://images.ctfassets.net/01to7kbtr3az/6GmDWWQ3bFej2AOMcYvwGP/fc81a7f84d0f9cb9497ce59e896adb68/ChobaniCommunityImpactFund_Desktop.png"
-              />
-              <Grid item xs={12} sm={12} md={12} style={gjj}>
+      <Grid container style={h8l}>
+        <Container
+          maxWidth="xl"
+          style={hht}
+          sx={{ background: "rgb(234,232,225)" }}
+        >
+          <Container maxWidth="xl" fixed disableGutters style={orh}>
+            <Grid container style={z4a}>
+              <Grid item xs={12} sm={6} md={6} style={jy3}>
                 <Grid
-                  container
+                  item
                   sx={{
+                    display: "block",
                     boxSizing: "border-box",
-                    display: "flex",
-                    flexWrap: "wrap",
-                    width: "100%",
-                    flexDirection: "row",
+                    margin: "auto",
+                    maxWidth: "80%",
+                    height: "100%",
                   }}
-                  data-aos1="fade-in"
-                ></Grid>
+                >
+                  <Grid container style={elf}>
+                    <Grid item sx={{ boxSizing: "border-box", margin: 0 }}>
+                      <Typography variant="h1" style={font1}>
+                        What’s Amazing
+                      </Typography>
+                      <Typography variant="p" style={font2}>
+                        Pouches are magical, especially for kids: the one that
+                        they can enjoy any time of the day, for any meal...and
+                        the kiddos think they are getting a treat!
+                        <br />
+                        <br />
+                        Our strawberry smoothie recipe features a combination of
+                        ripe strawberries, vegetables and seeds for
+                        comprehensive nutrition. Plus that nutrient blend
+                        derived from vegetables and fruits for that extra
+                        antioxidant, anti-inflammatory and nutrition boost! Yep,
+                        you don’t have to fight with them over eating
+                        vegetables. This pouch gives them all.
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+              </Grid>
+              <Grid item xs={12} sm={6} md={6} style={jy3}>
+                <CardMedia
+                  component="img"
+                  style={imgsx}
+                  src="https://images.ctfassets.net/01to7kbtr3az/5sBR0kv32ZfuliS2blQt26/219d2d4fd4fbccc3e8d6b80eaa855f60/ImpactPartnership_2up_Desktop_1340x1100.png"
+                />
               </Grid>
             </Grid>
-          </Grid>
+          </Container>
         </Container>
       </Grid>
       <Footer />

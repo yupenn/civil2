@@ -50,7 +50,7 @@ const q8 = {
   display: "flex",
   flexFlow: "wrap",
   width: "100%",
-  margin: "10px auto 60px",
+  margin: "60px auto 60px",
   backgroundColor: "rgb(250,250,250)",
 };
 
